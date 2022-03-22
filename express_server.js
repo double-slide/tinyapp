@@ -51,6 +51,13 @@ app.post("/urls", (req, res) => {
   res.send("Ok"); // Respond with 'OK' (to be replaced)
 });
 
-function generateRandomString() {
-  
+const generateRandomString = function() {
+  let characters = '0123456789abcdeghijklmnopqrstuvwxyz';
+  let randomUrl = "";
+  for (let i = 0; i < 6; i++) {
+    let randomChar = Math.floor(Math.random() * 35)
+    randomUrl += characters[randomChar];
+  }
+  return randomUrl;
 };
+
