@@ -17,7 +17,8 @@ const urlDatabase = {
 app.use(morgan('dev'));
 
 app.get("/", (req, res) => {
-  res.send("Hello!");
+  // res.send("Hello!");
+  res.redirect("/urls");
 });
 
 app.listen(PORT, () => {
