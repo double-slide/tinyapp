@@ -31,11 +31,13 @@ TinyApp is a full stack web application built with Node and Express that allows 
   - create new URL short links (tinyURLs)
   - view a table of their existing link
   - edit or delete existing links
+- With the server running, any short link (tinyURL) can be used to access the full URL address
 
 ## Security
 - Passwords entered by a user are hashed
 - Browser cookies are encrypted, and are used by the app to verify login status
 - Browser cookies are deleted upon logout
+- Only URLs owned (created) by a user are accessible to them for sharing, editting or deleting
 
 ## Future Objectives
 - Add database functionality to store user data and URLs
