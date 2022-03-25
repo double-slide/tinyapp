@@ -16,9 +16,28 @@ TinyApp is a full stack web application built with Node and Express that allows 
 - bcrypt
 - body-parser
 - cookie-session
-
+- morgan
 
 ## Getting Started
 
 - Install all dependencies (using the `npm install` command).
 - Run the development web server using the `npm start` command.
+- With the server running, use your browser to navigate to `localhost:8080/`
+
+## Functionality
+- A new user can register their email and password, and are then auto-logged in
+- An existing user can use their email and password to login
+- Once logged in, users can
+  - create new URL short links (tinyURLs)
+  - view a table of their existing link
+  - edit or delete existing links
+
+## Security
+- Passwords entered by a user are hashed
+- Browser cookies are encrypted, and are used by the app to verify login status
+- Browser cookies are deleted upon logout
+
+## Future Objectives
+- Add database functionality to store user data and URLs
+- Add logging functionality to when short URL links are used
+- Build out error pages to provide more visual continuity for the user

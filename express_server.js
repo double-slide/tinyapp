@@ -2,6 +2,7 @@ const { getUserIdFromEmail, generateRandomString, isPasswordCorrectForEmail, url
 
 const express = require("express");
 const app = express();
+
 app.set("view engine", "ejs");
 
 const PORT = 8080;
@@ -74,7 +75,6 @@ app.get("/urls", (req, res) => {
     res.send("<h3>Error 403 - Please <a href='/login'>login</a> to access URLs!</h3>")
     return;
   }
-
   const urls = urlsForUser(user_id, urlDatabase);
   const user = users[user_id];
   const templateVars = { 
