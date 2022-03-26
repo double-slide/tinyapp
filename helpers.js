@@ -7,13 +7,13 @@ const getUserIdFromEmail = function(email, database) {
     }
   }
   return undefined;
-}
+};
 
 const generateRandomString = function() {
   let characters = '0123456789abcdeghijklmnopqrstuvwxyz';
   let randomUrl = "";
   for (let i = 0; i < 6; i++) {
-    let randomChar = Math.floor(Math.random() * 35)
+    let randomChar = Math.floor(Math.random() * 35);
     randomUrl += characters[randomChar];
   }
   return randomUrl;
