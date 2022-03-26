@@ -22,7 +22,8 @@ TinyApp is a full stack web application built with Node and Express that allows 
 
 - Install all dependencies (using the `npm install` command).
 - Run the development web server using the `npm start` command.
-- With the server running, use your browser to navigate to `localhost:8080/`
+- With the server running, use your browser to navigate to `localhost:8080/`[^1]
+- **Note:** _the app will create and delete browser cookies during usage; if the server is restarted before the user logs out, cookies will need to be manually deleted from the browser for the next session_
 
 ## Functionality
 - A new user can register their email and password, and are then auto-logged in
@@ -43,3 +44,5 @@ TinyApp is a full stack web application built with Node and Express that allows 
 - Add database functionality to store user data and URLs
 - Add logging functionality to when short URL links are used
 - Build out error pages to provide more visual continuity for the user
+
+[^1]: Currently only set-up for local running. Check back in future for the fully-hosted version!
