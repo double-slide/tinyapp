@@ -26,7 +26,7 @@ TinyApp is a full stack web application built with Node and Express that allows 
 - **Note:** _the app will create and delete browser cookies during usage; if the server is restarted before the user logs out, cookies will need to be manually deleted from the browser for the next session_
 
 ## Functionality
-- A new user can register their email and password, and are then auto-logged in
+- A new user can register their email and password, and are then auto-logged in [^2]
 - An existing user can use their email and password to login
 - Once logged in, users can
   - create new URL short links (tinyURLs)
@@ -38,7 +38,7 @@ TinyApp is a full stack web application built with Node and Express that allows 
 - Passwords entered by a user are hashed
 - Browser cookies are encrypted, and are used by the app to verify login status
 - Browser cookies are deleted upon logout
-- Only URLs owned (created) by a user are accessible to them for sharing, editting or deleting
+- Only URLs owned (created) by a user are accessible to them for sharing, editing or deleting
 
 ## Future Objectives
 - Add database functionality to store user data and URLs
@@ -46,3 +46,4 @@ TinyApp is a full stack web application built with Node and Express that allows 
 - Build out error pages to provide more visual continuity for the user
 
 [^1]: Currently only set-up for local running. Check back in future for the fully-hosted version!
+[^2]: User data is currently saved to short-term memory. Check back in future for persistant data functionality!
