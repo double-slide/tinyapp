@@ -36,7 +36,7 @@ const urlsForUser = function(idToFilter, database) {
   const keys = Object.keys(database);
   for (const shortURL of keys) {
     const url = database[shortURL];
-    if (url.user_id === idToFilter) {
+    if (url.userId === idToFilter) {
       filteredUrlObject[shortURL] = url;
     }
   }
